@@ -11,6 +11,7 @@
   "author": "sudesh bhat",
   "license": "ISC",
   "dependencies": {
+    "@fullhuman/postcss-purgecss": "^2.3.0",
     "autoprefixer": "^9.8.5",
     "postcss-cli": "^7.1.1",
     "react": "^16.13.1",
