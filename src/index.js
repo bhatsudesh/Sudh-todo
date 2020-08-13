@@ -1,13 +1,11 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 
-import Nav from './components/nav'
 import ToDoContainer from './components/todoContainer/index.js'
 
 const App = () =>{
     return (
-        <div className="font-sans w-full h-screen bg-gray-100">
-                <Nav />
+        <div className="font-sans w-full h-screen">
                 <ToDoContainer />
         </div>
     )
