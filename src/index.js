@@ -6,7 +6,7 @@ import ToDoContainer from './components/todoContainer/index.js'
 const App = () =>{
     return (
         <div className="font-sans w-full h-screen">
-                <ToDoContainer />
+            <ToDoContainer />
         </div>
     )
 }
