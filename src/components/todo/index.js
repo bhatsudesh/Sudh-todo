@@ -5,7 +5,6 @@ export default function ToDo({ task, taskIndex, triggerToDo }) {
     const deleteHandler = (index) => {
         let tasks = localStorage.getItem('ToDos');
         tasks = JSON.parse(tasks || "[]");
-        console.log(index)
         tasks.splice(index, 1);
         localStorage.setItem('ToDos', JSON.stringify(tasks));
     }

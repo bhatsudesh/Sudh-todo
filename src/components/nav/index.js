@@ -9,7 +9,7 @@ export default function Nav({ handleInput, handleAddToDo }) {
 
     return (
         <header className="fixed top-0 w-full flex flex-wrap items-center text-blue-500 lg:py-4 py-3 lg:text-gray-800 bg-gray-200 lg:px-48 px-3 shadow-lg shadow-sm">
-            <div className="flex-1 flex justify-between items-center">
+            <form className="flex-1 flex justify-between items-center">
                 <div className="font-bold lg:text-lg text-base hover:text-blue-600 cursor-pointer lg:pr-24 mr-4 sm:mr-10" onClick={() => {
                     scrollTop();
                 }
@@ -34,7 +34,7 @@ export default function Nav({ handleInput, handleAddToDo }) {
                         Add
                     </button>
                 </div>
-            </div>
+            </form>
         </header >
     )
 }

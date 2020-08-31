@@ -17,7 +17,6 @@ const ToDoContainer = () => {
 
         ToDos.unshift(todo);
         localStorage.setItem('ToDos', JSON.stringify(ToDos));
-        console.log(tasks)
     }
 
     const handleInput = (e) => {
@@ -29,9 +28,13 @@ const ToDoContainer = () => {
     }
 
     const handleAddToDo = (e) => {
-        addToLocalStorage(inputValue);
-        setInputValue('');
-        fetchToDos();
+        if(inputValue != '') {
+            addToLocalStorage(inputValue);
+            setInputValue('');
+            fetchToDos();
+        } else {
+            
+        }
     }
 
     const fetchToDos = () => {
